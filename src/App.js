@@ -4,21 +4,20 @@ import './App.css';
 import CardsContainer from './Components/Cards/CardsContainer.js';
 import Urn from './Components/Urn.js';
 import {trashItems} from './data.js';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Route, Link, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
     <Container>
-      <Route path='/' component={Cont} />
-      <Route path="/:id" component={Urn} />
+      <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path="/:id" component={Urn} />
+      </Switch>
     </Container>
-
-    </Router>
   );
 }
 
-function Cont() {
+function Home() {
   return (
   <>
     {/* <div className='search-block'>
