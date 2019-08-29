@@ -4,12 +4,12 @@ import {urnTypes} from '../data.js';
 export default function Urn({match}) {
   const {id} = match.params;
   const urn = urnTypes[id];
-  const {imgUrl, text} = urn;
-  console.log('render urn');
+  const {label, text, imgUrl} = urn;
+
   return (
-    <div>
-    test
-      {text}
-    </div>
+    <article>
+      <h2>{label}</h2>
+      <p>{text}</p>
+    </article>
   );
 }

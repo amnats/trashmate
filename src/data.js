@@ -41,6 +41,7 @@ const trashItems = [
 const urnTypes = {
   aluminum: {
     label: 'вторсырье, алюминий',
+    text: 'алюминий :)'
   },
   paper: {
     label: 'вторсырье, бумага'
