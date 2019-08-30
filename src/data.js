@@ -1,5 +1,5 @@
 
-
+// добавить еще типы мусора
 const trashItems = [
   {
     key: 'aluminum_can',

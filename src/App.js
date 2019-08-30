@@ -17,12 +17,18 @@ function App() {
   );
 }
 
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
 function Home() {
   return (
   <>
     {/* <div className='search-block'>
       <input type='text' />
     </div> */}
+    <nav>
+      <ol>
+
+      </ol>
+    </nav>
     <CardsContainer cards={trashItems} />
   </>);
 }
