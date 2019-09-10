@@ -1,10 +1,10 @@
 import React from 'react';
 import {Container} from 'react-bootstrap';
 import './App.css';
-import CardsContainer from './Components/Cards/CardsContainer.js';
-import Urn from './Components/Urn.js';
-import {trashItems} from './data.js';
-import { Route, Link, Switch } from "react-router-dom";
+import CardsContainer from './Components/Cards/CardsContainer';
+import Urn from './Components/Urn';
+import {trashItems} from './data';
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
   return (

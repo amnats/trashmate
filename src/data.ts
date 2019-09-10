@@ -1,6 +1,16 @@
+import { ReactElement } from 'react';
+
+export interface trashCard {
+  key: string,
+  label: string,
+  text: string | ReactElement,
+  urn: string,
+  imgUrl: string
+}
+
 
 // добавить еще типы мусора
-const trashItems = [
+const trashItems: trashCard[] = [
   {
     key: 'aluminum_can',
     label: 'Алюминиевая банка',
@@ -38,18 +48,24 @@ const trashItems = [
   }
 ]
 
-const urnTypes = {
-  aluminum: {
+export interface urnType {
+  label: string,
+  text?: string | ReactElement,
+  imgUrl?: string
+} 
+
+const urnTypes: {[name: string]: urnType} = {
+  'aluminum': {
     label: 'вторсырье, алюминий',
     text: 'алюминий :)'
   },
-  paper: {
+  'paper': {
     label: 'вторсырье, бумага'
   },
-  plastic: {
+  'plastic': {
     label: 'вторсырье, пластик'
   },
-  non_sortable: {
+  'non_sortable': {
     label: 'несортируемый'
   }
 }

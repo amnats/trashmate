@@ -1,10 +1,9 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import {urnTypes} from '../../data.js';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {urnTypes, trashCard} from '../../data';
+import { Link } from "react-router-dom";
 
-export default function TrashCard({data}) {
+export default function TrashCard({data} : {data: trashCard}) {
   const {
     label,
     urn: urnId,
