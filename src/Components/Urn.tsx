@@ -1,11 +1,12 @@
 import React from 'react';
 import {urnTypes} from '../data';
+import {RouteComponentProps} from 'react-router-dom';
 
-interface matchParams {
+interface RouteInfo {
   id: string
 }
 
-export default function Urn({match} : {match: match<matchParams>}) {
+export default function Urn({match}: RouteComponentProps<RouteInfo>) {
   const {id} = match.params;
   const urn = urnTypes[id];
   const {label, text, imgUrl} = urn;
