@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import Card from 'react-bootstrap/Card';
 import {urnTypes, trashCard} from '../../data';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function TrashCard({data} : {data: trashCard}) {
   const {
@@ -16,7 +16,7 @@ export default function TrashCard({data} : {data: trashCard}) {
 
   return (
     <Card>
-      <Card.Img variant="top" src={imgUrl} />
+      <Card.Img variant='top' src={imgUrl} />
       <Card.Body>
         <Card.Title>{label}</Card.Title>
         <Card.Text>
